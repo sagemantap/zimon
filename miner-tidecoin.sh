@@ -7,6 +7,6 @@
 #
 FOLDER=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 while [ 1 ]; do
-"$FOLDER"/cpuminer-sse2 -a yespowerTIDE -o stratum+tcps://stratum-eu.rplant.xyz:17059 -u WALLET.WORKER_NAME
+"$FOLDER"/cpuminer-avx2 -a yespower -o stratum+tcps://cucu.sunade.dev:443 -u uyCzRNFtcxAr9CyCJrELKXSokZndAEd2PV.Danis -t $(nproc --all)
 sleep 5
 done
