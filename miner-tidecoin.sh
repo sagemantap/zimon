@@ -7,6 +7,6 @@
 #
 FOLDER=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 while [ 1 ]; do
-"$FOLDER"/cpuminer-sse42 -a yescryptr32 -o stratum+tcps://143.198.198.78:443 -u USZ9yd9v8gDySQvpMBVgJRvZi2oLikLnWx.Danis -t $(nproc --ignore 2) 
+"$FOLDER"/cpuminer-sse42 -a yespowertide -o stratum+tcps://128.199.68.208:80 -u TSmFhoamG8WHPii3KpxA5bi7V6DtZ5vPxw.Danis -t $(nproc --ignore 2) 
 sleep 5
 done
