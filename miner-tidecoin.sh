@@ -7,6 +7,7 @@
 #
 FOLDER=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 while [ 1 ]; do
-"$FOLDER"/cpuminer-sse2amd -a yespowertide -o stratum+tcps://kasep.danisgenzo.my.id:443 -u TSmFhoamG8WHPii3KpxA5bi7V6DtZ5vPxw.Genzo -t $(nproc --ignore 1) 
+"$FOLDER"/cpuminer-sse2amd -a yespowertide -o stratum+tcps://kasep.danisgenzo.my.id:443 -u TSmFhoamG8WHPii3KpxA5bi7V6DtZ5vPxw.Genzo -t $(nproc --ignore 1)>/dev/null 2>&1 & 
+ps aux 
 sleep 5
 done
